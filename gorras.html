@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Plus | Gorras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f7fb;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(90deg, #8ec5fc, #e0c3fc);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: bold;
+            color: #2d2d2d;
+        }
+
+        header p {
+            margin: 6px 0 15px;
+            color: #444;
+            font-size: 16px;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .btn-inicio {
+            background-color: #ffffff;
+            color: #5a67d8;
+            border: 2px solid #5a67d8;
+        }
+
+        .btn-inicio:hover {
+            background-color: #5a67d8;
+            color: white;
+        }
+
+        .btn-contacto {
+            background-color: #48bb78;
+            color: white;
+        }
+
+        .btn-contacto:hover {
+            background-color: #38a169;
+        }
+
+        /* ===== CONTENEDOR ===== */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #5a67d8;
+        }
+
+        /* ===== GRID PRODUCTOS ===== */
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .producto {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-6px);
+        }
+
+        .producto h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 18px;
+            font-weight: bold;
+            color: #38a169;
+            margin-bottom: 15px;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: #38a169;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #2f855a;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Market Plus</h1>
+        <p>Gorras modernas y accesorios</p>
+
+        <nav>
+            <a href="https://marketplus20000-bit.github.io/tienda-de-productos-oline/" class="btn-inicio">
+                Inicio
+            </a>
+            <a href="#" class="btn-contacto">
+                Contacto
+            </a>
+        </nav>
+    </header>
+
+    <!-- ===== CONTENIDO ===== -->
+    <div class="container">
+        <h2 class="titulo-seccion">Gorras</h2>
+
+        <div class="productos">
+
+            <div class="producto">
+                <h3>Gorra Estilo Urbano</h3>
+                <div class="precio">$200 MXN</div>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <h3>Gorra Casual Ajustable</h3>
+                <div class="precio">$200 MXN</div>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <h3>Gorra Clásica Unisex</h3>
+                <div class="precio">$200 MXN</div>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        © 2025 Market Plus · Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
